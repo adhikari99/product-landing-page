@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #12172b;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+#header-img {
+    width: 80px;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+section {
+    position: relative;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#video {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    display: block;
+
+    padding: 0;
+}
+
+.container {
+    margin: 20px 40px;
+
+}
+
+.heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.heading span {
+    font-family: italic;
+    font-size: 30px;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+}
+
+.profile {
+    flex-basis: 260px;
+}
+
+.profile .profile-img {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.profile:hover .profile-img {
+    filter: grayscale(0);
+}
+
+.user-name {
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.profile h5 {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .profiles {
+        flex-direction: column;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .heading {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .heading span {
+        font-size: 15px;
+    }
+
+    .profiles {
+        margin: 20px 0;
+    }
+
+}
